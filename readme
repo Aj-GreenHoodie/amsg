@@ -33,6 +33,23 @@ Installation-
   4. (make sure you're in original folder)
      python3 amsg.py --help
 
+How to use tor hidden service-
+{Linux- Debian}
+    1. apt install tor
+    2. sudo nano /etc/tor/torrc
+    3. Add these lines-  HiddenServiceDir /var/lib/tor/amsg_hidden_service/
+                         HiddenServicePort 9999 127.0.0.1:9999
+    4. sudo service tor start
+    5. login to root user, then
+           cat /var/lib/tor/amsg_hidden_service/hostname
+{Windows}
+    1. Download tor window expert bundle from here https://www.torproject.org/download/tor/
+    2. Follow some sort of tutorial to start tor hiddenservice in windows?
+        https://miloserdov.org/?p=1839
+
+  6. Start server at same port as HiddenServicePort at localhost,
+     share hidden service hostname with person who wants to connect you.
+     cli use that address in --ip option
 
 * Users identity like user_name doesn't matter here they will just vary. Allocating fix userid,ip will only create seurity holes(name,ip spoofing).
 * Username stored into database for one time view only purpose.
