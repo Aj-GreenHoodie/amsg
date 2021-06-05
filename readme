@@ -1,4 +1,4 @@
-               Anonymous-messaging
+               Anonymous-messaging(two-way messaging)
 
 Amsg is end-end encrypted client-server messaging app, which allows you to connect using ip and tor domain name. while using tor your IP also became hidden. It gives you feature like end-to-end encryption, hiding yourself.
 Amsg divide into 2 parts-
